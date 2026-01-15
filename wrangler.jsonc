@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "whatsapp-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-01-15",
+  "vars": {
+    "WHATSAPP_API_VERSION": "v21.0",
+    "WHATSAPP_API_URL": "https://graph.facebook.com"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "whatsapp-db",
+      "database_id": "86adbc17-186a-48b9-9bbc-553a82dbb819"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
